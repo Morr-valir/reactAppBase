@@ -1,15 +1,15 @@
-import { useState } from 'react'
+import React from "react";
+import {BrowserRouter as Router, Route, Link, Routes} from 'react-router-dom'
+import HomePage from './pages/HomePage';
 
-function App() {
-  const [count, setCount] = useState(0)
-
-  return (
-    <>
-    <div>
-      <h1>Burger house</h1>
-    </div>
-    </>
-  )
+export default function App() {
+	return (
+		<div>
+			<Router>
+				<Routes>
+					<Route exact path="/" element={<HomePage />} />
+				</Routes>
+			</Router>
+		</div>
+	);
 }
-
-export default App
