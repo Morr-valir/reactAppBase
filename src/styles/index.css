@@ -14,3 +14,16 @@ body{
 .animate{
     transition: all .2s ease-in-out;
 }
+
+@layer base{
+    .btn-small{
+        @apply shadow-xl uppercase text-white font-medium px-5 py-2 text-xs rounded-sm
+    }
+
+    .btn-big{
+        @apply shadow-xl uppercase text-white font-medium px-8 py-4 text-base rounded-sm
+    }
+    .btn-base{
+        @apply shadow-xl uppercase text-white font-medium px-4 py-3 text-sm rounded-sm
+    }
+}

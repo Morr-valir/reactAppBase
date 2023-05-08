@@ -4,7 +4,7 @@ import Icone from '../../assets/svg/ico-bag-clickAndCollect.svg'
 import Button from "../elements/Button";
 export default function Navigation() {
 	return (
-		<nav className="flex items-center justify-between py-10">
+		<nav className=" relative z-10 flex items-center justify-between py-10">
 			<img src={Logo} alt="Burger house app" className="w-64" />
             <div>
                 <div className="flex items-center justify-end gap-1">
@@ -12,8 +12,8 @@ export default function Navigation() {
                     <span className="block">Commandez votre repas en ligne</span>
                 </div>
                 <div className="flex items-center gap-2 mt-2">
-                    <Button className={'bg-primary hover:bg-secondary'} name="Inscription"/>
-                    <Button className={'bg-secondary hover:bg-secondary'} name="Connexion"/>
+                    <Button className="tracking-widest" name="Inscription"/>
+                    <Button className="tracking-widest" name="Connexion" color="secondary"/>
                 </div>
             </div>
 		</nav>
