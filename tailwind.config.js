@@ -161,6 +161,9 @@ export default {
       fuchsia: colors.fuchsia,
       pink: colors.pink,
       rose: colors.rose,
+      'primary' : '#ffc045',
+      'secondary':'#3d2514',
+      'secondary-red': '#bf2222',
     }),
     columns: {
       auto: 'auto',
@@ -303,6 +306,7 @@ export default {
       DEFAULT: '1',
     },
     fontFamily: {
+      'secondary': ['"Alfa Slab One"'],
       sans: [
         'ui-sans-serif',
         'system-ui',
